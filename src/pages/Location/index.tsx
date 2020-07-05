@@ -1,6 +1,6 @@
 import React, { useRef, useCallback } from 'react';
 import { FormHandles } from '@unform/core';
-import { FiArrowLeft, FiStar, FiMenu, FiMapPin } from 'react-icons/fi';
+import { FiStar, FiMapPin } from 'react-icons/fi';
 import { MdRestaurantMenu } from 'react-icons/md';
 import {
   FaWhatsapp,
@@ -8,6 +8,8 @@ import {
   FaInstagram,
   FaTwitter,
 } from 'react-icons/fa';
+
+import ButtonBack from '../../components/ButtonBack';
 import Nav from '../../components/Nav';
 import {
   Container,
@@ -29,7 +31,7 @@ const Dashboard: React.FC = () => {
     <>
       <Container>
         <Header background={locationBg}>
-          <FiArrowLeft size={20} />
+          <ButtonBack />
         </Header>
         <Rating>
           <div>

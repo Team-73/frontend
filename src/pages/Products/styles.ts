@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-import { FiHeart } from 'react-icons/fi';
 import { IconBaseProps } from 'react-icons';
 
 interface LocationProps {
@@ -16,59 +15,86 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
-  align-content: space-around;
+  justify-content: space-between;
 
   form {
-    margin: 32px 0 8px 0;
-    width: 320px;
+    margin: 16px 0 8px 0;
+    width: 340px;
     text-align: center;
   }
 `;
 
-export const Location = styled.section<LocationProps>`
-  background: url(${props => props.background}) no-repeat;
-  background-size: cover;
-  width: 320px;
-  height: 100px;
-  border-radius: 10px 10px 0 0px;
+export const Header = styled.header`
+  background: #48454d;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px;
+`;
 
-  & + section {
-    margin-top: 64px;
+export const Content = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const Footer = styled.footer`
+  width: 100%;
+`;
+
+export const Products = styled.div`
+  flex: 1;
+`;
+
+export const Product = styled.div`
+  display: flex;
+  padding: 8px;
+  width: 340px;
+  height: 80px;
+  background: #232029;
+  border-radius: 10px;
+
+  & + div {
+    margin-top: 8px;
   }
 
-  > div {
-    background: #232029;
-    padding: 16px;
-    height: 56px;
-    position: relative;
-    top: 100px;
-    border-radius: 0 0 10px 10px;
-    display: flex;
-    align-items: center;
-    width: 100%;
-
-    div {
-      top: 0;
-      flex: 1;
-      h2 {
-        font-size: 16px;
-      }
-
-      p {
-        font-size: 10px;
-      }
+  div {
+    h2 {
+      font-size: 16px;
     }
-    span {
-      text-align: right;
-      h3 {
-        font-size: 14px;
-      }
-      p {
-        font-size: 12px;
-      }
+
+    p {
+      font-size: 10px;
     }
+  }
+
+  img {
+    width: 64px;
+    height: 64px;
+    border-radius: 5px;
+    margin-left: 8px;
   }
 `;
 
-export const FavIcon = styled(FiHeart)<FavIconProps>``;
+export const Price = styled.div`
+  display: flex;
+
+  h3 {
+    font-size: 14px;
+    margin-right: 8px;
+    margin-top: 8px;
+    text-decoration: line-through;
+    & + h3 {
+      color: #f9a21a;
+      text-decoration: none;
+    }
+  }
+  span {
+    font-size: 10px;
+  }
+`;
