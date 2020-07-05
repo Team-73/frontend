@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import { shade } from 'polished';
 
-import signInBackgroundImg from '../../assets/sign-up-background.png';
+import signInBackgroundImg from '../../assets/bg-bar.jpg';
 
 export const Container = styled.div`
   height: 100vh;
@@ -61,7 +61,7 @@ export const AnimationContainer = styled.div`
     }
   }
   > a {
-    color: #F78F10;
+    color: #f78f10;
     display: block;
     margin-top: 24px;
     text-decoration: none;
