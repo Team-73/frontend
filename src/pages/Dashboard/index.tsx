@@ -2,6 +2,7 @@ import React, { useRef, useCallback } from 'react';
 import { FormHandles } from '@unform/core';
 import { FiSearch, FiStar } from 'react-icons/fi';
 import { Form } from '@unform/web';
+import { Link } from 'react-router-dom';
 
 import Input from '../../components/Input';
 import Nav from '../../components/Nav';
@@ -15,11 +16,11 @@ const Dashboard: React.FC = () => {
   }, []);
   const formRef = useRef<FormHandles>(null);
   return (
-    <>
-      <Container>
-        <Form ref={formRef} onSubmit={handleSubmit}>
-          <Input name="email" icon={FiSearch} placeholder="Procurar" />
-        </Form>
+    <Container>
+      <Form ref={formRef} onSubmit={handleSubmit}>
+        <Input name="email" icon={FiSearch} placeholder="Procurar" />
+      </Form>
+      <Link to="/location">
         <Location background={locationBg}>
           <div>
             <div>
@@ -34,6 +35,8 @@ const Dashboard: React.FC = () => {
             </span>
           </div>
         </Location>
+      </Link>
+      <Link to="/location">
         <Location background={locationBg}>
           <div>
             <div>
@@ -44,10 +47,12 @@ const Dashboard: React.FC = () => {
               <h3>1 km</h3>
               <p>
                 4,7 <FiStar size={10} color="#F78F10" /> (500)
-              </p>
+                </p>
             </span>
           </div>
         </Location>
+      </Link>
+      <Link to="/location">
         <Location background={locationBg}>
           <div>
             <div>
@@ -58,13 +63,13 @@ const Dashboard: React.FC = () => {
               <h3>1 km</h3>
               <p>
                 4,7 <FiStar size={10} color="#F78F10" /> (500)
-              </p>
+                </p>
             </span>
           </div>
         </Location>
-      </Container>
+      </Link>
       <Nav />
-    </>
+    </Container>
   );
 };
 

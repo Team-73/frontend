@@ -27,4 +27,27 @@ export default createGlobalStyle`
     cursor: pointer;
     font-size: 18px;
   }
+
+  a:link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #fff;
+    text-decoration: none;
+  }
 `;

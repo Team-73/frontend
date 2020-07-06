@@ -3,6 +3,7 @@ import { FormHandles } from '@unform/core';
 import { FiMessageSquare } from 'react-icons/fi';
 import { MdRestaurantMenu } from 'react-icons/md';
 import { Form } from '@unform/web';
+import { Link } from 'react-router-dom';
 
 import Input from '../../components/Input';
 import Nav from '../../components/Nav';
@@ -37,7 +38,9 @@ const Dashboard: React.FC = () => {
     <>
       <Container>
         <Header background={productBg}>
-          <ButtonBack />
+          <Link to="/location">
+            <ButtonBack />
+          </Link>
         </Header>
 
         <Content>

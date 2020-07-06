@@ -41,6 +41,9 @@ export const Content = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  a {
+    margin: 8px;
+  }
 `;
 
 export const Footer = styled.footer`

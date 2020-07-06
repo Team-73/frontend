@@ -2,6 +2,7 @@ import React, { useRef, useCallback } from 'react';
 import { FormHandles } from '@unform/core';
 import { FiSearch } from 'react-icons/fi';
 import { Form } from '@unform/web';
+import { Link } from 'react-router-dom';
 
 import Input from '../../components/Input';
 import Nav from '../../components/Nav';
@@ -30,7 +31,9 @@ const Dashboard: React.FC = () => {
     <>
       <Container>
         <Header>
-          <ButtonBack />
+          <Link to="/location">
+            <ButtonBack />
+          </Link>
           <DropDown />
         </Header>
 
@@ -40,106 +43,94 @@ const Dashboard: React.FC = () => {
           </Form>
 
           <Products>
-            <Product>
-              <div>
-                <h2>Antarctica 600ml</h2>
-                <p>
-                  Descrição do produto contendo todos os detalhes de praparação
-                  e insumos.
-                </p>
-                <Price>
-                  <h3>
-                    <span>R$ </span>10,00
-                  </h3>
-                  <h3>
-                    <span>R$ </span>10,00
-                  </h3>
-                </Price>
-              </div>
-              <div>
-                <img src={productImg} alt="Antactica" />
-              </div>
-            </Product>
-            <Product>
-              <div>
-                <h2>Antarctica 600ml</h2>
-                <p>
-                  Descrição do produto contendo todos os detalhes de praparação
-                  e insumos.
-                </p>
-                <Price>
-                  <h3>
-                    <span>R$ </span>10,00
-                  </h3>
-                  <h3>
-                    <span>R$ </span>10,00
-                  </h3>
-                </Price>
-              </div>
-              <div>
-                <img src={productImg} alt="Antactica" />
-              </div>
-            </Product>
-            <Product>
-              <div>
-                <h2>Antarctica 600ml</h2>
-                <p>
-                  Descrição do produto contendo todos os detalhes de praparação
-                  e insumos.
-                </p>
-                <Price>
-                  <h3>
-                    <span>R$ </span>10,00
-                  </h3>
-                  <h3>
-                    <span>R$ </span>10,00
-                  </h3>
-                </Price>
-              </div>
-              <div>
-                <img src={productImg} alt="Antactica" />
-              </div>
-            </Product>
-            <Product>
-              <div>
-                <h2>Antarctica 600ml</h2>
-                <p>
-                  Descrição do produto contendo todos os detalhes de praparação
-                  e insumos.
-                </p>
-                <Price>
-                  <h3>
-                    <span>R$ </span>10,00
-                  </h3>
-                  <h3>
-                    <span>R$ </span>10,00
-                  </h3>
-                </Price>
-              </div>
-              <div>
-                <img src={productImg} alt="Antactica" />
-              </div>
-            </Product>
-            <Product>
-              <div>
-                <h2>Antarctica 600ml</h2>
-                <p>
-                  Descrição do produto contendo todos os detalhes de praparação
-                  e insumos.
-                </p>
-                <Price>
-                  <h3>
-                    <span>R$ </span>10,00
-                  </h3>
-                  <h3>
-                    <span>R$ </span>10,00
-                  </h3>
-                </Price>
-              </div>
-              <div>
-                <img src={productImg} alt="Antactica" />
-              </div>
-            </Product>
+            <Link to="/product">
+              <Product>
+                <div>
+                  <h2>Antarctica 600ml</h2>
+                  <p>
+                    Descrição do produto contendo todos os detalhes de
+                    praparação e insumos.
+                  </p>
+                  <Price>
+                    <h3>
+                      <span>R$ </span>10,00
+                    </h3>
+                    <h3>
+                      <span>R$ </span>10,00
+                    </h3>
+                  </Price>
+                </div>
+                <div>
+                  <img src={productImg} alt="Antactica" />
+                </div>
+              </Product>
+            </Link>
+            <Link to="/product">
+              <Product>
+                <div>
+                  <h2>Antarctica 600ml</h2>
+                  <p>
+                    Descrição do produto contendo todos os detalhes de
+                    praparação e insumos.
+                  </p>
+                  <Price>
+                    <h3>
+                      <span>R$ </span>10,00
+                    </h3>
+                    <h3>
+                      <span>R$ </span>10,00
+                    </h3>
+                  </Price>
+                </div>
+                <div>
+                  <img src={productImg} alt="Antactica" />
+                </div>
+              </Product>
+            </Link>
+            <Link to="/product">
+              <Product>
+                <div>
+                  <h2>Antarctica 600ml</h2>
+                  <p>
+                    Descrição do produto contendo todos os detalhes de
+                    praparação e insumos.
+                  </p>
+                  <Price>
+                    <h3>
+                      <span>R$ </span>10,00
+                    </h3>
+                    <h3>
+                      <span>R$ </span>10,00
+                    </h3>
+                  </Price>
+                </div>
+                <div>
+                  <img src={productImg} alt="Antactica" />
+                </div>
+              </Product>
+            </Link>
+            <Link to="/product">
+              <Product>
+                <div>
+                  <h2>Antarctica 600ml</h2>
+                  <p>
+                    Descrição do produto contendo todos os detalhes de
+                    praparação e insumos.
+                  </p>
+                  <Price>
+                    <h3>
+                      <span>R$ </span>10,00
+                    </h3>
+                    <h3>
+                      <span>R$ </span>10,00
+                    </h3>
+                  </Price>
+                </div>
+                <div>
+                  <img src={productImg} alt="Antactica" />
+                </div>
+              </Product>
+            </Link>
           </Products>
           <OrderPreview />
         </Content>

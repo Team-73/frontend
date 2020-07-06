@@ -16,12 +16,11 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
-  align-content: space-around;
+  justify-content: space-between;
 
   form {
-    margin: 32px 0 8px 0;
-    width: 320px;
+    margin: 16px 0 8px 0;
+    width: 340px;
     text-align: center;
   }
 `;
@@ -29,12 +28,12 @@ export const Container = styled.div`
 export const Location = styled.section<LocationProps>`
   background: url(${props => props.background}) no-repeat;
   background-size: cover;
-  width: 320px;
+  width: 340px;
   height: 100px;
   border-radius: 10px 10px 0 0px;
 
   & + section {
-    margin-top: 64px;
+    margin-top: 16px;
   }
 
   > div {
@@ -71,4 +70,4 @@ export const Location = styled.section<LocationProps>`
   }
 `;
 
-export const FavIcon = styled(FiHeart)<FavIconProps>``;
+export const FavIcon = styled(FiHeart) <FavIconProps>``;

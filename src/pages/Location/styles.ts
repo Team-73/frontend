@@ -20,8 +20,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
-  align-content: space-around;
+  justify-content: space-between;
 
   h1 {
     text-align: left;
@@ -50,10 +49,9 @@ export const Social = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
   flex-wrap: wrap;
   flex-flow: row wrap;
-  align-content: flex-end;
+  align-content: center;
 
   div {
     align-self: center;
@@ -67,7 +65,6 @@ export const Social = styled.div`
 `;
 
 export const Rating = styled.div`
-  margin-top: 16px;
   width: 340px;
   align-items: center;
   justify-content: center;
@@ -81,7 +78,7 @@ export const Rating = styled.div`
   }
 `;
 
-export const FavIcon = styled(FiHeart)<FavIconProps>``;
+export const FavIcon = styled(FiHeart) <FavIconProps>``;
 
 export const RoundButton = styled.button<RoundButtonProps>`
   display: inline-block;
