@@ -13,7 +13,9 @@ Share bill's payment with friends
 And still accumulate points to redeem prizes
 Change the entire consumer experience for the better
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OWy9gkgBt7k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[Demo video](https://www.youtube.com/watch?v=OWy9gkgBt7k&feature=youtu.be)
+
+## Description
 
 ## ❗ Requirements
 
