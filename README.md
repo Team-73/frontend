@@ -1,6 +1,6 @@
 
 <h1 align="center">
-    <img alt="NextLevelWeek" title="#NextLevelWeek" src=".github/logo.svg" width="250px" />
+    <img alt="ôChefia" title="#ôChefia" src="https://github.com/Team-73/backend/raw/master/.github/logo.svg?sanitize=true" width="250px" />
 </h1>
 
 ## 📝 Project
